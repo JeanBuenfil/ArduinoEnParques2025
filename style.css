@@ -1,0 +1,446 @@
+.carousel-slide {
+    display: flex;
+    justify-content: center; /* Alinea el contenido del carrusel en el centro */
+    align-items: center; /* Alinea las imÃ¡genes verticalmente */
+
+    /****************************************************************************************************/
+    width: 100%; /* 100% para cada imagen, aqui suma 100% por cada imagen actual que hay en el carrusel */
+    /*animation: slide 30s infinite;*/
+}
+
+.carousel-slide:hover{
+    transform: scale(1.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    text-align: center;
+    font-family: sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+
+}
+
+.logo{
+    margin-left: 30px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background: #3f3f3f;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header{
+    /*height: 60vh !important;*/
+    height: auto;
+    background: url(img/ard2.jfif) no-repeat center;
+    background-size: cover;
+
+}
+
+.header {
+    padding-top: 63px; /* Igual a la altura de .head */
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.subtitle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    background: #9c27b0;
+}
+
+.btn:hover{
+    background: none;
+
+}
+
+.btn-home{
+    display: flex;
+
+}
+
+.btn-home a{
+    margin: 0 10px;
+
+}
+
+.content{
+    height: 50vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.content.price{
+    height: 72vh;
+}
+
+.content.sau{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau{
+    padding: 30px;
+    background: #1f1d1d;
+    
+    
+}
+
+
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.box-container .box{
+    height: 11rem;
+    width: 17rem;
+    min-height: 13rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0,0,0,.5);
+    margin: 2rem;
+
+}
+
+.box-container .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-container .box h3{
+    font-size: 20px;
+    color: #9c27b0;
+
+}
+
+.box-container .box p{
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+.box {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.2s;
+    
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+
+.box img {
+    width: 43%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.box h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.box p {
+    color: #7a7a7a;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.about{
+    background: #171717;
+
+}
+
+.price{
+    background: url(img/ard3.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact{
+    padding-top: 20px;
+    background: #171717;
+    padding-bottom: 40px;
+}
+
+
+
+.header {
+    padding-top: 63px; /* Esto deja espacio para el header */
+}
+
+.sau, .about, .price, .contact {
+     /* Ajusta segÃºn sea necesario */
+    padding-top: 80px;
+    padding-bottom: 40px;
+    
+}
+
+
+.about{
+    padding-top: 180px;
+    padding-bottom: 130px;
+}
+
+
+.content.price img {
+    border-radius: 15px; /* Redondear bordes */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* AnimaciÃ³n suave */
+    margin: 15px; /* Espaciado entre las imÃ¡genes */
+    border: 2px solid #ddd; /* AÃ±adir un borde */
+}
+
+.content.price img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaÃ±o al pasar el ratÃ³n */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* AÃ±ade una sombra */
+}
+
+
+
+
+
+.carousel {
+    width: 100%;
+    height: 80vh; /* Establece una altura fija para el carrusel */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+.carousel-slide img {
+    width: 25%;  /* 100% de ancho para ocupar todo el contenedor */
+    max-height: calc(80vh - 20px); /* Altura levemente inferior a la secciÃ³n del carrusel */
+    object-fit: contain; /* Ajuste de la imagen sin recorte */
+    margin: 0 auto;  
+    border-radius: 20px; /* Redondear las esquinas */
+    box-shadow: 0 0 0 10px white; /* Simular un borde blanco fuera de la imagen */
+}
+
+
+
+@media (max-width: 768px) {
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+
+    }
+
+    .sau{
+        height: 120vh;
+
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .header {
+        height: auto; /* Cambiar a auto si es necesario */
+        padding-top: 63px; /* AsegÃºrate de que el padding no cause solapamiento */
+    }
+
+    .content{
+        height: auto;
+    }
+
+    .content, .sau, .about, .price, .contact {
+        padding-top: 330px; /* Menos espacio en pantallas pequeÃ±as */
+        padding-bottom: 200px; /* Menos espacio en pantallas pequeÃ±as */
+    }
+
+    .title {
+        font-size: 30px; /* TamaÃ±o mÃ¡s pequeÃ±o para mÃ³viles */
+    }
+    
+    .box-container {
+        flex-direction: column; /* Apilar verticalmente */
+        align-items: center; /* Centrar los boxes */
+    }
+
+    .box-container .box {
+        width: 90%; /* AsegÃºrate de que los boxes ocupen suficiente ancho */
+        margin: 10px 0; /* Espaciado vertical entre boxes */
+    }
+
+    .carousel-slide img {
+        width: 95%;  /* 100% de ancho para ocupar todo el contenedor */
+        max-height: calc(80vh - 20px); /* Altura levemente inferior a la secciÃ³n del carrusel */
+        object-fit: contain; /* Ajuste de la imagen sin recorte */
+        margin: 0 auto;  
+        border-radius: 20px; /* Redondear las esquinas */
+        box-shadow: 0 0 0 10px white; /* Simular un borde blanco fuera de la imagen */
+    }
+}
+
+
+.carousel-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(46, 48, 46); /* Puedes ajustar para que sea dinÃ¡mico */
+    background-size: cover;
+    
+    z-index: -1; /* Asegura que estÃ© detrÃ¡s del contenido del carrusel */
+    
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    20% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
